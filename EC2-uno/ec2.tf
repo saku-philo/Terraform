@@ -4,6 +4,6 @@ resource "aws_instance" "sandbox" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "${format("sandbox-%02d", count.index + 1)}"
+    Name = format("sandbox-%02d", count.index + 1)
   }
 }
